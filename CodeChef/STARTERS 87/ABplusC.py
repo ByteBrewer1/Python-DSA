@@ -10,6 +10,7 @@ for i in range(int(input())):
 
     else:
         x = n % 10 ** 6
+        print(x)
         y = n // 10 ** 6
         if x != 0:
             print(10**6, y, x)
