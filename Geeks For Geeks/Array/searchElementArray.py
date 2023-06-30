@@ -4,13 +4,13 @@ import math
 
 
 class Solution:
-
-    # Function to sort the binary array.
-    def binSort(self, A, N):
+    # Complete the below function
+    def search(self, arr, N, X):
         # Your code here
-        # No need to print the array
-        A.sort()
-
+        for x in range(N):
+            if arr[x] == X:
+                return x
+        return -1
 
 # {
  # Driver Code Starts
@@ -20,14 +20,14 @@ class Solution:
 def main():
     T = int(input())
     while (T > 0):
-        N = int(input())
-        A = list(map(int, input().split()))
-        obj = Solution()
-        obj.binSort(A, N)
 
-        for i in A:
-            print(i, end=" ")
-        print()
+        N = int(input())
+
+        A = [int(x) for x in input().strip().split()]
+
+        x = int(input())
+        ob = Solution()
+        print(ob.search(A, N, x))
 
         T -= 1
 

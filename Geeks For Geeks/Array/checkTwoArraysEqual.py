@@ -3,11 +3,12 @@
 class Solution:
     # Function to check if two arrays are equal or not.
     def check(self, A, B, N):
-        # Sort the Arrays first
         A.sort()
         B.sort()
-        for i in range(N):
-            if A[i] != B[i]:
+        if len(A) != len(B):
+            return False
+        for x in range(N):
+            if A[x] != B[x]:
                 return False
         return True
 

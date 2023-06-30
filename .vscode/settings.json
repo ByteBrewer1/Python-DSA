@@ -1,3 +1,4 @@
 {
-  "cph.general.onceMaintainerMessage": false
+  "cph.general.onceMaintainerMessage": false,
+  "python.analysis.typeCheckingMode": "basic"
 }
